@@ -1,0 +1,13 @@
+CREATE DATABASE Cadastro;
+use Cadastro;
+
+CREATE TABLE users (
+	user_id INT(11) NOT NULL AUTO_INCREMENT,
+    username VARCHAR(45) NOT NULL,
+    passwd VARCHAR(45) NOT NULL,
+    email VARCHAR(45) NOT NULL,
+    dataCadastro date,
+    PRIMARY KEY (user_id)
+);
+
+SELECT * FROM users;
